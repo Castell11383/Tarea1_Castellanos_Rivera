@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea No. 1</title>
+</head>
+
+<body>
+
+    <script>
+        // STRINGS
+        // charAt(index): Devuelve el carácter en la posición especificada
+        let str1 = "HOLA MUNDO";
+        console.log(str1.charAt(1));
+
+        // toUpperCase(): Convierte todos los caracteres de la cadena a mayúsculas.
+        let str2= "HOLA MUNDO";
+        console.log(str2.toUpperCase());
+
+        // slice(start, end): Extrae una sección de una cadena y devuelve una nueva cadena.
+        let str3= "HOLA MUNDO";
+        console.log(str3.slice(0, 5));
+
+
+
+        //NUMBERS
+        // toFixed(digits): Formatea un número utilizando notación de punto fijo.
+        let num1 = 5.56789;
+        console.log(num1.toFixed(2)); 
+
+        // toString(radix): Devuelve una cadena que representa al objeto Number en la base especificada.
+        let num2 = 255;
+        console.log(num2.toString(16)); 
+
+        // parseInt(string, radix): Analiza una cadena y devuelve un entero en la base especificada.
+        let str = "123";
+        console.log(parseInt(str, 10));
+
+
+
+        //BOOLEANOS
+        // toString(): Devuelve una cadena que representa al objeto Boolean.
+        let bool1 = true;
+        console.log(bool1.toString()); 
+
+        // valueOf(): Devuelve el valor primitivo del objeto Boolean.
+        let bool2 = new Boolean(false);
+        console.log(bool2.valueOf()); 
+
+        // Boolean(expression): Convierte una expresión en un valor booleano.
+        let num = 0;
+        console.log(Boolean(num)); 
+
+
+
+        //OBJECTS
+        // hasOwnProperty(prop): Devuelve un booleano indicando si el objeto tiene la propiedad especificada.
+        let obj1 = { name: "John", age: 30 };
+        console.log(obj1.hasOwnProperty("name")); 
+
+        // keys(obj): Devuelve un array de los nombres de las propiedades enumerables de un objeto.
+        let obj2 = { name: "John", age: 30 };
+        console.log(Object.keys(obj2)); 
+
+        // values(obj): Devuelve un array con los valores de las propiedades de un objeto.
+        let obj3 = { name: "John", age: 30 };
+        console.log(Object.values(obj3)); 
+
+
+
+        //ARRAYS
+        // push(element): Añade uno o más elementos al final de un array y devuelve la nueva longitud del array.
+        let arr1 = [1, 2, 3];
+        arr.push(4);
+        console.log(arr1);
+
+        // pop(): Elimina el último elemento de un array y lo devuelve.
+        let arr2 = [1, 2, 3];
+        console.log(arr.pop()); 
+        console.log(arr2); 
+
+        // map(callback): Crea un nuevo array con los resultados de llamar a una función para cada elemento del array.
+        let arr3 = [1, 2, 3];
+        let newArr = arr3.map(x => x * 2);
+        console.log(newArr); 
+
+    </script>
+
+</body>
+
+</html>
